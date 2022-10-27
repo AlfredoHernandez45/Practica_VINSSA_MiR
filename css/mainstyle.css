@@ -187,9 +187,9 @@ body a:focus {
   margin-bottom: 50px;
 }
 .index .flujo-trabajo .item-arms {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .index .flujo-trabajo .item-arms .arms {
   display: flex;
@@ -201,6 +201,10 @@ body a:focus {
   display: block;
   width: 100%;
   max-width: 286px;
+}
+.index .flujo-trabajo .item-arms .arms .image-arms img {
+  width: 100%;
+  max-width: 100%;
 }
 .index .flujo-trabajo .item-arms .arms .text-arms {
   display: block;
@@ -292,10 +296,10 @@ body a:focus {
   line-height: 160%;
   margin-bottom: 30px;
 }
-.index .ford-espa .back-ford-spa .text-ford-espa li {
+.index .ford-espa .back-ford-spa .text-ford-espa ul li {
   margin-bottom: 10px;
 }
-.index .ford-espa .back-ford-spa .text-ford-espa li span {
+.index .ford-espa .back-ford-spa .text-ford-espa ul li span {
   color: #5A5A5A;
   font-size: 15px;
   font-weight: 400;
@@ -481,15 +485,15 @@ body a:focus {
   text-align: center;
   margin-bottom: 15px;
 }
-.index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza li {
+.index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza ul li {
   margin-bottom: 15px;
-  text-align: center;
 }
-.index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza li span {
+.index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza ul li span {
   color: #5A5A5A;
   font-size: 15px;
   font-weight: 400;
   line-height: 140%;
+  text-align: justify;
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -654,10 +658,10 @@ body a:focus {
   .index .caracteristicas-amr .amr-transport .card-item-amr .item-amr .text-item-amr p {
     font-size: 15px;
   }
-  .index .soluciones-escalables .text-soluciones h2 {
+  .index .soluciones-escalables .text-solucioness h2 {
     font-size: 25px;
   }
-  .index .soluciones-escalables .text-soluciones p {
+  .index .soluciones-escalables .text-solucioness p {
     font-size: 15px;
   }
   .index .soluciones-escalables .image-soluciones img {
@@ -739,9 +743,6 @@ body a:focus {
   }
   .index .flujo-trabajo .item-arms .arms {
     flex-wrap: wrap;
-  }
-  .index .flujo-trabajo .item-arms .arms .image-arms {
-    margin: 20px auto 0;
   }
   .index .flujo-trabajo .item-arms .arms .text-arms {
     padding: 0 50px 20px;
@@ -881,7 +882,7 @@ body a:focus {
   }
   .index .hero-vinssa .text-hero-vinssa p {
     font-size: 15px;
-    text-align: justify;
+    text-align: center;
   }
   .index .hero-vinssa .text-hero-vinssa a {
     font-size: 15px;
@@ -913,18 +914,22 @@ body a:focus {
     width: 100%;
     max-width: 300px;
   }
+  .index .flujo-trabajo {
+    padding: 50px 0;
+  }
   .index .flujo-trabajo h2 {
     font-size: 20px;
-  }
-  .index .flujo-trabajo .item-arms {
-    display: flex;
-    flex-direction: column;
   }
   .index .flujo-trabajo .item-arms .arms {
     flex-wrap: wrap;
   }
   .index .flujo-trabajo .item-arms .arms .image-arms {
     margin: 0 auto;
+    max-width: 100%;
+  }
+  .index .flujo-trabajo .item-arms .arms .image-arms img {
+    width: 100%;
+    max-width: 100%;
   }
   .index .flujo-trabajo .item-arms .arms .text-arms {
     padding: 0 25px 20px;
@@ -936,7 +941,7 @@ body a:focus {
   .index .flujo-trabajo .item-arms .arms .text-arms p {
     font-size: 15px;
     padding-bottom: 20px;
-    text-align: justify;
+    text-align: center;
   }
   .index .solicitud-info .back-solicitud-info {
     flex-wrap: wrap;
@@ -967,14 +972,21 @@ body a:focus {
   }
   .index .ford-espa .back-ford-spa .text-ford-espa h2 {
     font-size: 20px;
+    text-align: center;
   }
   .index .ford-espa .back-ford-spa .text-ford-espa h3 {
     font-size: 15px;
+    font-weight: 700;
+    text-align: center;
   }
   .index .ford-espa .back-ford-spa .text-ford-espa p {
     font-size: 15px;
+    text-align: center;
   }
-  .index .ford-espa .back-ford-spa .text-ford-espa li span {
+  .index .ford-espa .back-ford-spa .text-ford-espa ul {
+    padding: 0 30px;
+  }
+  .index .ford-espa .back-ford-spa .text-ford-espa ul li span {
     font-size: 15px;
   }
   .index .ford-espa .back-ford-spa .image-ford-espa {
@@ -1061,7 +1073,10 @@ body a:focus {
   .index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza p {
     font-size: 15px;
   }
-  .index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza li span {
+  .index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza ul {
+    padding-left: 30px;
+  }
+  .index .personaliza-amr .items-personaliza-amr .item .text-item-personaliza ul li span {
     font-size: 15px;
   }
 }
