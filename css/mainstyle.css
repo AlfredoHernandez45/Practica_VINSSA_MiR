@@ -916,6 +916,10 @@ body a:focus {
   .index .flujo-trabajo h2 {
     font-size: 20px;
   }
+  .index .flujo-trabajo .item-arms {
+    display: flex;
+    flex-direction: column;
+  }
   .index .flujo-trabajo .item-arms .arms {
     flex-wrap: wrap;
   }
